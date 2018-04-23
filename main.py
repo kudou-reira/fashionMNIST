@@ -4,11 +4,11 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 def main():
-    fashion = pd.read_csv('fashion-mnist_train.csv')
+    fashion = pd.read_csv('/data/fashion-mnist_train.csv')
     labels = fashion['label']
     fashion = fashion.drop('label', 1)
 
-    fashion_test = pd.read_csv('fashion-mnist_test.csv')
+    fashion_test = pd.read_csv('/data/fashion-mnist_test.csv')
     labels_test = fashion_test['label']
     fashion_test = fashion_test.drop('label', 1)
 
